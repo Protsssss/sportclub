@@ -1,0 +1,238 @@
+/* style_dashboard.css */
+
+
+/* Стилізація заголовків */
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Стилізація таблиць */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Колір рядків таблиць */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Стилізація форм для редагування */
+form {
+  display: inline-block;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+select {
+  width: 150px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+input[type="button"] {
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="button"]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.button-group {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #4CAF50; /* Зелений */
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: transform 0.3s ease; /* Додати для анімації */
+}
+
+.btn:hover {
+  transform: scale(1.1); /* Збільшення при наведенні курсора */
+  background-color: #2bc930; /* Темно-зелений */
+  color: rgb(0, 0, 0);
+  border: 0.1rem solid #000000;
+}
+
+* { /* *//* Загальні стилі *//* */
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+body, button, input { /* Спільні стилі для елементів */
+  font-family: "Poppins", sans-serif;
+  font-size: 0.838rem;
+}
+
+body { /* тіло фону */
+  margin: 3.5rem 0 0 0;
+  background-color: #fff;
+  color: #10221b;
+}
+
+.header {
+  width: 100%;
+  background-color: #ffffffe8 !important; /* Темний сірий колір на задній фон шапки */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: 0.4s;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Тінь */
+}
+
+.btn { 
+  margin: 3.5rem 1rem 2rem; 
+  border: 0.1rem solid #717171;
+  color: rgb(130, 129, 129);
+  cursor: pointer;
+  background: #e4e4e4;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: 0.3s;
+}
+
+
+a { /* Стилі для посилань a */
+  text-decoration: none;
+  color: #10221b;
+}
+
+.lion { /* БЛОК "LION" */
+  height: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+  .lion { /* Відступи та висота між колонками */
+    padding: 0 2rem;
+    height: 4.5rem;
+    -moz-column-gap: 5rem;
+         column-gap: 0rem;
+  }
+  .lion__logo { /* Розмір шрифту для логотипу */
+    font-size: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.delete-form {
+    margin-bottom: 30px;
+}
+
+.form-label {
+    font-size: 18px;
+    color: #555;
+}
+
+.form-input {
+    width: 300px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.form-submit {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.form-submit:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.success-message {
+  color: green;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Анімація мигання */
+@keyframes flash {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+/* Зміна кольору при наведенні курсора на кнопку */
+#reloadButton:hover {
+  background-color: #09710e;
+  color: #fff;
+}
+
+
+
+

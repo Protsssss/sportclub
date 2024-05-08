@@ -1,0 +1,146 @@
+/* Фонове зображення тіла сторінки */
+.body {
+  background-image: url('https://i.imgur.com/mM03iQ6.jpeg');
+  background-repeat: no-repeat; /* Запобігає повторенню фонового зображення */
+  background-size: cover; /* Розтягує фонове зображення, щоб заповнити весь розмір вікна */
+}
+
+/* Сторінка входу користувача */
+.login-page {
+  width: 360px; /* Фіксована ширина сторінки входу */
+  padding: 8% 0 0; /* Відступи від верхнього краю */
+  margin: auto; /* Автоматичне центрування */
+}
+
+/* Форма входу */
+.form {
+  position: relative; /* Відносне позиціонування */
+  z-index: 1; /* Індекс накладення для забезпечення вищості над іншими елементами */
+  background: #FFA500; /* Колір фону форми */
+  max-width: 360px; /* Максимальна ширина форми */
+  margin: 0 auto 100px; /* Зовнішні відступи */
+  padding: 45px; /* Внутрішні відступи */
+  text-align: center; /* Вирівнювання тексту по центру */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Тінь форми */
+  border-radius: 20px; /* Скруглення кутів форми */
+}
+
+/* Стилі для введення тексту в формі */
+.form input {
+  font-family: "FontAwesome", "Roboto", sans-serif; /* Шрифт */
+  outline: 0; /* Заборона виділення поля */
+  background: #333; /* Колір фону поля введення */
+  color: #FFA500; /* Колір тексту */
+  width: 100%; /* Ширина поля введення */
+  border: 0; /* Відсутність рамки */
+  margin: 0 0 15px; /* Зовнішні відступи */
+  padding: 15px; /* Внутрішні відступи */
+  box-sizing: border-box; /* Розрахунок ширини включаючи границі */
+  font-size: 16px; /* Розмір шрифту */
+  border-radius: 10px; /* Скруглення кутів поля введення */
+}
+
+/* Стилі для кнопки в формі */
+.form button {
+  font-family: "Titillium Web", sans-serif; /* Шрифт */
+  font-size: 15px; /* Розмір шрифту */
+  font-weight: bold; /* Жирний шрифт */
+  letter-spacing: .1em; /* Міжлітерний інтервал */
+  outline: 0; /* Заборона виділення кнопки */
+  background: #333; /* Колір фону кнопки */
+  width: 100%; /* Ширина кнопки */
+  border: 0; /* Відсутність рамки */
+  border-radius: 30px; /* Скруглення кутів кнопки */
+  margin: 0px 0px 8px; /* Зовнішні відступи */
+  padding: 15px; /* Внутрішні відступи */
+  color: #f1d7a6; /* Колір тексту кнопки */
+  transition: all 0.3s ease; /* Плавний перехід для змін стилів */
+  cursor: pointer; /* Зміна курсору на покажчик при наведенні */
+}
+
+/* Затемнення кнопки при наведенні та фокусі */
+.form button:hover, .form button:focus {
+  background: #222; /* Затемнений колір */
+}
+
+/* Анімація кнопки при натисканні */
+.form button:active {
+  transform: translateY(2px); /* Зсув кнопки вниз на 2 пікселя */
+  box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.2); /* Тінь кнопки */
+}
+
+/* Повідомлення в формі */
+.form .message {
+  margin: 6px 6px; /* Відступи */
+  color: #808080; /* Колір тексту */
+  font-size: 11px; /* Розмір шрифту */
+  text-align: center; /* Вирівнювання тексту по центру */
+  font-weight: bold; /* Жирний шрифт */
+  font-style: normal; /* Нормальний шрифт */
+}
+
+/* Посилання в повідомленні */
+.form .message a {
+  color: #FFA500; /* Колір посилання */
+  text-decoration: none; /* Відсутність підкреслення */
+  font-size: 13px; /* Розмір шрифту */
+}
+
+/* Схована форма реєстрації */
+.form .register-form {
+  display: none; /* Прихована форма */
+}
+
+/* Контейнер */
+.container {
+  position: relative; /* Відносне позиціонування */
+  z-index: 1; /* Індекс накладення для забезпечення вищості над іншими елементами */
+  max-width: 300px; /* Максимальна ширина */
+  margin: 0 auto; /* Автоматичне центрування */
+}
+
+/* Допоміжні стилі для контейнера */
+.container:before, .container:after {
+  content: ""; /* Вміст */
+  display: block; /* Блочний елемент */
+  clear: both; /* Очистка */
+}
+
+/* Інформація в контейнері */
+.container .info {
+  margin: 50px auto; /* Відступи */
+  text-align: center; /* Вирівнювання тексту по центру */
+}
+
+/* Заголовок в контейнері */
+.container .info h1 {
+  margin: 0 0 15px; /* Відступи */
+  padding: 0; /* Внутрішні відступи */
+  font-size: 36px; /* Розмір шрифту */
+  font-weight: 300; /* Товщина шрифту */
+  color: #1a1a1a; /* Колір тексту */
+}
+
+/* Текстова інформація в контейнері */
+.container .info span {
+  color: #4d4d4d; /* Колір тексту */
+  font-size: 12px; /* Розмір шрифту */
+}
+
+/* Посилання в контейнері */
+.container .info span a {
+  color: #FFA500; /* Колір посилання */
+  text-decoration: none; /* Відсутність підкреслення */
+}
+
+/* Іконка в контейнері */
+.container .info span .fa {
+  color: #EF3B3A; /* Колір іконки */
+}
+
+/* Тіло сторінки */
+body {
+  font-family: "Roboto", sans-serif; /* Шрифт */
+  -webkit-font-smoothing: antialiased; /* Згладжування шрифтів в Webkit */
+  -moz-osx-font-smoothing: grayscale; /* Згладжування шрифтів в Firefox */
+}
